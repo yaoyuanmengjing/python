@@ -1,14 +1,20 @@
+# 根据用户输入内容打印其权限
+
+# alex --> 超级管理员
+# eric --> 普通管理员
+# tony --> 业务主管
+# 其他 --> 普通用户
 #!/usr/bin/python
 #encoding:utf-8
-import getpass
+name = raw_input("请输入用户名:")
 
-
-name = raw_input("请输入用户名")
-pwd = getpass.getpass("请输入密码：")
-
-if name == "alex" and pwd == "cmd":
-   print "欢迎,alex!"
+if name == "alex":
+    print "欢迎管理员"
+elif  name == "eric":
+    print "普通管理员"
+elif  name == "tony":
+    print "业务主管"
 else:
-   print "用户名和密码错误"
-   
+    print "普通用户"
+    
 
