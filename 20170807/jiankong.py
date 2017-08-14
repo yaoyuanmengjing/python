@@ -13,7 +13,7 @@ def getHtml(url):
     html = page.read()
     return html
 
-html = getHtml("https://back.21eline.com/ysdUpdate/see/GetCookie?cardID=8930000092276")
+html = getHtml("https://back.21eline.com/ysdUpdate/see/GetCookie?cardID=2000030001724")
 
 print eval(html)["updateTime"]  #将获取的字符串变成字典并取出updatetime的值
 
@@ -34,13 +34,13 @@ else:
     from email.header import Header
 
     sender = 'lyz'
-    receiver = 'duka2@mail.ysdtg.cn'
-    subject = '天津正式读卡检测'
+    receiver = 'liuyuzhou@mail.ysdtg.cn'
+    subject = '青岛通关单张俊读卡检测'
     smtpserver = 'mail.ysdtg.cn'
     username = 'duka'
     password = 'See123456'
 
-    msg = MIMEText('你好，天津正式读卡已经过期，请检查读卡程序','text','utf-8')#中文需参数‘utf-8’，单字节字符不需要
+    msg = MIMEText('你好，青岛通关单张俊读卡已经过期，请检查读卡程序','text','utf-8')#中文需参数‘utf-8’，单字节字符不需要
     msg['Subject'] = Header(subject, 'utf-8')
 
     smtp = smtplib.SMTP()
