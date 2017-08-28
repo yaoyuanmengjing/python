@@ -18,7 +18,7 @@ html = getHtml("http://test.21eline.com/ysddl/see/getCookie?cardID=2000040000522
 print eval(html)["updateTime"]  #将获取的字符串变成字典并取出updatetime的值
 
 a= eval(html)["updateTime"]
-#print a
+print a
 
 QpTime=time.mktime(time.strptime(a,'%Y-%m-%d %H:%M:%S'))
 #print QpTime
